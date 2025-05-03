@@ -1,11 +1,11 @@
-
+import Nabvar from '@/components/Navbar'
 
 function App() {
   return (
     <>
-      <p className="text-red-300">
-        Hola mundo
-      </p>
+      <div className="w-full">
+        <Nabvar />
+      </div>
     </>
   )
 }
