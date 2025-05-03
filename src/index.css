@@ -1,1 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 @import "tailwindcss";
+
+@font-face {
+  font-family: "airbnb-cereal-bd";
+  src: url("assets/fonts/AirbnbCereal_W_Bd.otf");
+}
+
+@font-face {
+  font-family: "airbnb-cereal-bk";
+  src: url("assets/fonts/AirbnbCereal_W_Bk.otf");
+}
+
+@font-face {
+  font-family: "airbnb-cereal-blk";
+  src: url("assets/fonts/AirbnbCereal_W_Blk.otf");
+}
+
+@font-face {
+  font-family: "airbnb-cereal-lt";
+  src: url("assets/fonts/AirbnbCereal_W_Lt.otf");
+}
+
+@font-face {
+  font-family: "airbnb-cereal-md";
+  src: url("assets/fonts/AirbnbCereal_W_Md.otf");
+}
+
+@font-face {
+  font-family: "airbnb-cereal-xbd";
+  src: url("assets/fonts/AirbnbCereal_W_XBd.otf");
+}
+
+
+@theme {
+  --color-main: #FF385C;
+  --color-main-hover: #B32505;
+  --color-title: #222222;
+  --color-gray-light: #6A6A6A;
+  --color-gray-bg-light: #F7F7F7;
+
+  --font-airbnb-bd: "airbnb-cereal-bd", "Roboto";
+  --font-airbnb-bk: "airbnb-cereal-bk", "Roboto";
+  --font-airbnb-blk: "airbnb-cereal-blk", "Roboto";
+  --font-airbnb-lt: "airbnb-cereal-lt", "Roboto";
+  --font-airbnb-md: "airbnb-cereal-md", "Roboto";
+  --font-airbnb-xbd: "airbnb-cereal-xbd", "Roboto";
+}
+
+
+input {
+  font-family: "airbnb-cereal-lt";
+}
