@@ -4,3 +4,10 @@ export type Language = {
   language: string,
   country: string
 }
+
+
+export type Routes = {
+  id: number,
+  label: string,
+  value: string
+}

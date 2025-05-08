@@ -5,7 +5,6 @@ import Airbnb from '@/assets/icons/airbnb'
 import World from '@/assets/icons/World'
 import Search from '@/assets/icons/Search'
 
-
 export default function Nabvar() {
   const [selectedOpt, setSelectedOpt] = useState("Alojamientos")
   const [showModal, setShowModal] = useState(false)
@@ -17,7 +16,7 @@ export default function Nabvar() {
         setIsOpen={() => setShowModal(false)}
       />
 
-      <nav className="w-full md:px-20 border-b-1 border-gray-200 pb-6">
+      <nav className="w-full md:px-20 fixed bg-white border-b-1 border-gray-200 pb-6">
         <div className="grid md:grid-cols-3 grid-cols-2 h-[80px]">
           <button className="text-main cursor-pointer w-32 order-1">
             <Airbnb />
@@ -55,7 +54,7 @@ export default function Nabvar() {
         </div>
 
         <div className="flex justify-center visible">
-          <div className="flex items-center border-1 border-gray-200 rounded-full gap-3 shadow-md md:min-w-[700px] md:max-w-[700px] h-[64px]">
+          <div className="flex items-center border-1 border-gray-200 rounded-full gap-3 shadow-md md:min-w-[850px] md:max-w-[700px] h-[64px]">
             <div className="h-full flex flex-col justify-center cursor-pointer rounded-full hover:bg-gray-200 px-5">
               <label
                 className="text-[12px] font-airbnb-lt font-semibold cursor-pointer"
@@ -71,7 +70,7 @@ export default function Nabvar() {
             </div>
 
             {selectedOpt.includes("Alojamientos") ? (
-              <div className='min-w-[240px] h-full grid grid-cols-2'>
+              <div className='min-w-[330px] h-full grid grid-cols-2'>
                 <div className="px-5 flex flex-col justify-center cursor-pointer rounded-full hover:bg-gray-200">
                   <label
                     className="text-[12px] font-airbnb-lt font-semibold cursor-pointer"
@@ -99,7 +98,7 @@ export default function Nabvar() {
                 </div>
               </div>
             ) : (
-              <div className="min-w-[240px] px-5 h-full flex flex-col justify-center cursor-pointer rounded-full hover:bg-gray-200">
+              <div className="min-w-[330px] px-5 h-full flex flex-col justify-center cursor-pointer rounded-full hover:bg-gray-200">
                 <label
                   className="text-[12px] font-airbnb-lt font-semibold cursor-pointer"
                 >
