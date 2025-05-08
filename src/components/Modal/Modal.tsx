@@ -7,7 +7,6 @@ import {
   TabGroup,
   TabList,
   TabPanels,
-  Tab,
   TabPanel,
   Switch
 } from '@headlessui/react'
@@ -15,6 +14,7 @@ import close from '@/assets/icons/close.svg'
 import traductor from '@/assets/icons/traductor.svg'
 import seen from '@/assets/icons/seen.svg'
 import { LANGUAGES } from '@/constants/index.ts'
+import CustomTab from '../General/CustomTab'
 
 type ModalProps = {
   isOpen: boolean,
@@ -145,7 +145,7 @@ export default function Modal({ isOpen, setIsOpen }: ModalProps) {
                   <TabGroup>
                     <TabList className="flex gap-3 border-b-1 border-gray-300 py-2">
                       {TABS.map((tab, index) => (
-                        <Tab
+                        <CustomTab
                           key={`${tab.label}-${index}`}
                           className={
                             `font-semibold px-2 py-2 relative
@@ -153,9 +153,10 @@ export default function Modal({ isOpen, setIsOpen }: ModalProps) {
                               'text-black' : 'text-gray-500 cursor-pointer'}`
                           }
                           onClick={() => setTabSelected(tab.label)}
+                          isSelected={tabSelected.includes(tab.label)}
                         >
                           {tab.label}
-                        </Tab>
+                        </CustomTab>
                       ))}
                     </TabList>
 
