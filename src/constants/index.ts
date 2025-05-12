@@ -54,3 +54,16 @@ export const COLUMN_THREE = [
   { id: 34, label: "Inversores", value: "accessibility" },
   { id: 35, label: "Alojamientos Airbnb.org", value: "1320" }
 ]
+
+export const IMAGE_STAYS = [
+  {
+    id: 1,
+    images: [
+      'https://a0.muscache.com/im/pictures/miso/Hosting-7602468/original/fc6f5b15-0e67-420e-adc6-fb9fe81e4386.jpeg?im_w=960',
+      'https://a0.muscache.com/im/pictures/miso/Hosting-7602468/original/06d9c082-9475-466e-bc7f-735618c32659.jpeg?im_w=480',
+      'https://a0.muscache.com/im/pictures/380b3d77-1a9e-423b-8f64-8189f124dccf.jpg?im_w=480',
+      'https://a0.muscache.com/im/pictures/miso/Hosting-7602468/original/144d4533-5535-47d7-9ea5-32ccda5242f6.jpeg?im_w=480',
+      'https://a0.muscache.com/im/pictures/129b9c8e-18da-49ef-a2d8-88a35fe9d17e.jpg?im_w=480',
+    ]
+  }
+]

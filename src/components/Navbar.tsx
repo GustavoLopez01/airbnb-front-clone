@@ -16,7 +16,7 @@ export default function Nabvar() {
         setIsOpen={() => setShowModal(false)}
       />
 
-      <nav className="w-full md:px-20 fixed bg-white border-b-1 border-gray-200 pb-6">
+      <nav className="w-full md:px-20 fixed z-10 bg-white border-b-1 border-gray-200 pb-6">
         <div className="grid md:grid-cols-3 grid-cols-2 h-[80px]">
           <button className="text-main cursor-pointer w-32 order-1">
             <Airbnb />

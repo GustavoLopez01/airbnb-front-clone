@@ -18,7 +18,7 @@ export default function UserOptions() {
       <MenuItems
         transition
         anchor="bottom end"
-        className="w-60 bg-white outline-0 origin-top-right rounded-xl border-gray-200
+        className="w-60 z-20 bg-white outline-0 origin-top-right rounded-xl border-gray-200
         text-sm/6 text-black font-airbnb-lt py-3 mt-2"
         style={{
           boxShadow: "rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px"
